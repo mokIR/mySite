@@ -1,0 +1,22 @@
+$base-color: #d1cdb7;
+
+$secondary-color: #dcd8c0;
+
+$background-grey: #363636;
+
+$text-light-grey: #686868;
+
+body > #root > div {
+  height: 100vh;
+}
+
+.App {
+  background-color: #d1cdb7;
+}
+
+.Sidebar {
+  width: 180px;
+  min-height: 100%;
+  background-color: $background-grey;
+  color: $text-light-grey;
+}

@@ -1,0 +1,69 @@
+// todo import colors from main? organise scss files into single directory?
+$background-grey: #363636;
+$main-white: #fff;
+$border-main: #454138;
+
+@mixin image-build($img-val) {
+    content: '';
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 110%;
+    width: 100%;
+    top: -20px;
+    transform: rotate(2deg);
+    background-image: url($img-val);
+    background-size: cover;
+}
+
+
+
+.option-education:after {
+    @include image-build('https://studentsurvey.ie/sites/default/files/styles/large/public/2019-10/WIT%20Campus.jpg?itok=C0Je-q4s');  
+}
+
+.option-experience:after {
+    @include image-build('https://beat102103.com/wp-content/uploads/2019/11/ArcLabs-Extension-e1573827501856.jpg');  
+}
+
+.option-skills:after {
+    @include image-build('https://images.idgesg.net/images/article/2018/07/code_coding_javascript_laptop_by_clement_h_cc0_via_unsplash_1200x800-100763703-large.jpg');  
+}
+
+.main-option {
+    padding-top: 20px;
+    width: 110%;
+    height: 450px;
+    color: white;
+    font-size: 24px;
+    transform: rotate(-2deg);
+    position: relative;
+    left: -10px;
+    // opacity: .9;
+    
+    cursor: pointer;
+    background-color: $background-grey;
+    overflow: hidden;
+    border-bottom: $border-main solid;
+
+    &--text-container {
+        position: absolute;
+        top: 200px;
+        z-index: 1;
+        transform: rotate(2deg);
+        text-align: center;
+        width: 100%;
+    }
+
+    // &--secondary-text {
+    //     transform: rotate(0deg);
+    // }
+
+    &:hover {
+        &:after {
+            opacity: .4;
+            background-color: $background-grey;
+            transition: opacity 0.6s;
+            -webkit-transition: opacity 0.6s;
+        }
+    }
+}
