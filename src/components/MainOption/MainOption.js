@@ -3,9 +3,6 @@ import './MainOption.scss';
 import { textOptions, styleOptions } from './constants';
 
 const MainOption = (props) => {
-    console.log('props: ', props);
-    console.log('props.option: ', props.option);
-    console.log('props.secondaryText: ', props.secondaryText);
 
     return (<div className={`main-option option-${styleOptions[props.option]}`}>
         <div class="main-option--text-container">

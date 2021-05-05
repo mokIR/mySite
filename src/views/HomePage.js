@@ -5,7 +5,7 @@ import Intro from './Intro';
 const HomePage = (props) => {
     console.log('props: ', props);
 
-    return (<div>
+    return (<div class="home-page">
         <Intro />
         <MainOption option="cssAnimations" childElement={<CogContainer />} secondaryText="Coming Soon"/>
         <MainOption option="skills"/>
