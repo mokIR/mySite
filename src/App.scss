@@ -1,4 +1,4 @@
-$base-color: #d1cdb7;
+$main-white: #fff;
 
 $secondary-color: #dcd8c0;
 
@@ -7,7 +7,7 @@ $background-grey: #363636;
 $text-light-grey: #686868;
 
 .App {
-  background-color: #d1cdb7;
+  background-color: $main-white;
 }
 
 .Sidebar {

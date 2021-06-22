@@ -1,12 +1,26 @@
+// todo share base colors/ sort scss files
+// $base-color: fff;
+$main-white: #fff;
+
 .home-page-banner {
-    height: 300px;
+    height: 600px;
+    margin: 40px 0;  
+    position: relative;
+    width: 100%;
+
+    .home-page-banner-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
     h1 {
         font-weight: normal;
         text-transform: uppercase;
         letter-spacing: 0.5rem;
-        text-shadow: 0.3rem 0.3rem 0 #bab5a1;
         margin: 0px;
-        padding: 10px 0 0 10px;
+        font-size: 76px;
+        color: #414141;
     }
 
     .scroll-hint {
@@ -16,9 +30,40 @@
         writing-mode: vertical-rl;
         text-orientation: upright;
     }
+
+    &--image {
+        background-image: url("../images/hotAirBalloon.jpg");
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 30%;
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    &--content {
+        display: grid;
+        grid-template-columns: 16% 16% 16% 16% 16% 16% 16% auto;
+        margin-top: 64px;
+        &--info {
+            background-color: $main-white;
+            position: relative;
+            z-index: 4;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            p { 
+                font-size: 18px;
+                font-weight: 300;
+            }
+        }
+    }
 }
 
 .home-page {
     width: 100%;
     overflow-y: hidden;
+    // height: 100vh;
+    max-width: 1440px;
+    margin: 0 auto;
+
 }
