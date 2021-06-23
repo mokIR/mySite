@@ -7,6 +7,7 @@ $main-white: #fff;
     margin: 40px 0;  
     position: relative;
     width: 100%;
+    overflow: hidden;
 
     .home-page-banner-container {
         position: absolute;
@@ -45,6 +46,7 @@ $main-white: #fff;
         display: grid;
         grid-template-columns: 16% 16% 16% 16% 16% 16% 16% auto;
         margin-top: 64px;
+        padding-left: 8px;
         &--info {
             background-color: $main-white;
             position: relative;
