@@ -5,13 +5,13 @@ import Intro from './Intro';
 const HomePage = (props) => {
     console.log('props: ', props);
 
-    return (<div class="home-page">
+    return (<main class="home-page">
         <Intro />
         <MainOption option="cssAnimations" childElement={<CogContainer />} secondaryText="Coming Soon"/>
         <MainOption option="skills"/>
         <MainOption option="experience"/>
         <MainOption option="education"/>
-    </div>)
+    </main>)
 }
 
 export default HomePage;
