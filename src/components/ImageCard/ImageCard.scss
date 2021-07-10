@@ -1,0 +1,41 @@
+.image-card {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    overflow: hidden;
+    position: relative;
+    word-wrap: break-word;
+    padding-left: 8px;
+
+    h1 {
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        margin: 0px;
+        font-size: 56px;
+        color: #414141;
+    }
+    
+    p {
+        word-wrap: break-word;
+    }
+
+    &--image-container {
+        grid-column-start: 3;
+        grid-column-end: 6;
+        height: 500px;
+        &--image {
+            height: 384px;
+            width: 711px;
+            background-image: url("../../images/StarDestroyer.png");
+            background-size: cover;
+            overflow: hidden;
+        }
+    }
+
+
+    &--text-container {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
